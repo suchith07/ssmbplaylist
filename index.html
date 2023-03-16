@@ -1,0 +1,63 @@
+<html>
+<head><title>SSMB FAV PLAYLIST</title></head>
+<body bgcolor="#000080">
+<center>
+<table bgcolor="#00FFFF">
+<caption style="color:white"><pre><strong><big>SSMB  ALL  TIME  FAVOURITE  PLAYLIST</big></strong></pre></caption>
+<tr>	
+<td>1. Cheppave Chirugali</td>
+<td><audio controls onplay="pauseRunningAudio('song1')" id="song1">
+	<source src="cheppave.m4a"></audio></td>
+</tr>
+<tr>
+<td>2. Adaraku</td>
+<td><audio controls onplay="pauseRunningAudio('song2')" id="song2">
+	<source src="adaraku.mp3"></audio></td>
+</tr>
+<tr>
+<td>3. Dole Dole</td>
+<td><audio controls onplay="pauseRunningAudio('song3')" id="song3">
+	<source src="dole.m4a"></audio></td>
+</tr>
+<td>4. Nee Dookudu</td>
+<td><audio controls onplay="pauseRunningAudio('song4')" id="song4">
+	<source src="needookudu.mp3"></audio></td>
+</tr>
+<td>5. Guruvaram</td>
+<td><audio controls onplay="pauseRunningAudio('song5')" id="song5">
+	<source src="guruvaram.mp3"></audio></td>
+</tr>
+<td>6. Sir Osthara</td>
+<td><audio controls onplay="pauseRunningAudio('song6')" id="song6">
+	<source src="sirosthara.mp3"></audio></td>
+</tr>
+<td>7. Inka Cheppale</td>
+<td><audio controls onplay="pauseRunningAudio('song7')" id="song7">
+	<source src="inkacheppale.m4a"></audio></td>
+</tr>
+<td>8. Jatha Kalise</td>
+<td><audio controls onplay="pauseRunningAudio('song8')" id="song8">
+	<source src="jathakalise.mp3"></audio></td>
+</tr>
+<td>9. Nuvvani Idhi Needani</td>
+<td><audio controls onplay="pauseRunningAudio('song9')" id="song9">
+	<source src="nuvvani.mp3"></audio></td>
+</tr>
+</table>
+<script>
+var nowplaying = null;
+
+// Pause and reset playing audio before starting new selection  
+function pauseRunningAudio(id) {        
+    if ( nowplaying != null && nowplaying != id) {
+        var x = document.getElementById(nowplaying); 
+        x.pause();
+        x.load();   
+    }
+    nowplaying = id;
+}
+</script>
+</center>
+</body>
+<footer align="center" style="color:white">created by <a href="https://www.instagram.com/urstrulysuchith/" style="color:white">G S Suchith</a>&nbsp;&nbsp;&nbsp;&nbsp;(DHFM)
+</html>
